@@ -4,6 +4,7 @@
  * @description : 字符逆序
  * @date : 2020-12-30 09:19
  **/
+//---------------------------双指针-----------------------------
 import java.util.*;
 public class Main{
     public static void main(String[] args) {
@@ -28,3 +29,28 @@ public class Main{
         }
     }
 }
+//------------------------------------------------------------------
+
+//-----------------------------reverse()------------------------------
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Main solution = new Main() ;
+    }
+
+    public Main(){
+        Scanner in = new Scanner(System.in) ;
+        while(in.hasNextLine()){
+            String str = in.nextLine() ;
+            StringBuffer ans = new StringBuffer(str);
+            //StringBuilder res = new StringBuilder(str);
+            ans.reverse();
+            System.out.println(ans);
+            //System.out.println(new String(ans));
+        }
+
+    }
+}
+//------------------------------------------------------------------------
+
