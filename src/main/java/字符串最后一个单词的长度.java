@@ -14,20 +14,24 @@ public class Main {
     }
 
     public Main(){
-        Scanner in = new Scanner(System.in) ;
-        String str = in.nextLine() ;
-        int cnt = 0 ;
-        char[] s = str.toCharArray() ;
-        for(int i = s.length - 1 ; i >= 0 ; i--){
-            if(s[i] == ' '){
-                break ;
+        Scanner scanner = new Scanner(System.in) ;
+        while(scanner.hasNextLine()){
+            String str = scanner.nextLine() ;
+            int cnt = 0 ;
+            char[] s = str.toCharArray() ;
+            for(int i = s.length - 1 ; i >= 0 ; i--){
+                if(s[i] == ' '){
+                    break ;
+                }
+                cnt++ ;
             }
-            cnt++ ;
+            System.out.println(cnt);
         }
-        System.out.println(cnt);
+        scanner.close() ;
     }
 }
 //-----------------------------------------------------------------------------
+//-----------------------------------分割字符串---------------------------------
 import java.util.*;
 
 public class Main{
@@ -36,12 +40,15 @@ public class Main{
     }
 
     public Main(){
-        Scanner in = new Scanner(System.in);
-        String str = in.nextLine();
-        String[] s = str.split(" ");
-        int len = s[s.length - 1].length();
-        System.out.println(len) ;
+        Scanner scanner = new Scanner(System.in);
+        while(scanner.hasNextLine()){
+            String str = scanner.nextLine();
+            String[] s = str.split(" ");
+            int len = s[s.length - 1].length();
+            System.out.println(len) ;
+        }
+        scanner.close() ;
     }
 }
-//------------------------------------分割字符串--------------------------------
+//-----------------------------------------------------------------------------
 

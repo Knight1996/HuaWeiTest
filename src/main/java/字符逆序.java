@@ -12,9 +12,9 @@ public class Main{
     }
 
     public Main(){
-        Scanner in = new Scanner(System.in);
-        while(in.hasNextLine()){
-            String str = in.nextLine() ;
+        Scanner scanner = new Scanner(System.in);
+        while(scanner.hasNextLine()){
+            String str = scanner.nextLine() ;
             char[] s = str.toCharArray() ;
             int left = 0 ;
             int right = s.length - 1 ;
@@ -27,6 +27,7 @@ public class Main{
             }
             System.out.println(new String(s));
         }
+        scanner.close() ;
     }
 }
 //------------------------------------------------------------------
@@ -40,16 +41,16 @@ public class Main{
     }
 
     public Main(){
-        Scanner in = new Scanner(System.in) ;
-        while(in.hasNextLine()){
-            String str = in.nextLine() ;
+        Scanner scanner = new Scanner(System.in) ;
+        while(scanner.hasNextLine()){
+            String str = scanner.nextLine() ;
             StringBuffer ans = new StringBuffer(str);
             //StringBuilder res = new StringBuilder(str);
             ans.reverse();
             System.out.println(ans);
             //System.out.println(new String(ans));
         }
-
+        scanner.close() ;
     }
 }
 //------------------------------------------------------------------------
