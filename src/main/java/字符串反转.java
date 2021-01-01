@@ -26,6 +26,7 @@ public class Main{
             }
             System.out.println(new String(chars)) ;
         }
+        scanner.close();
     }
 
     public void swap(char[]chars , int left , int right){
@@ -53,6 +54,7 @@ public class Main{
             System.out.println(new String(s)) ;
             //System.out.println(s) ;
         }
+        scanner.close();
     }
 }
 //---------------------------------------------------------------
