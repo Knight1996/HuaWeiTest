@@ -39,3 +39,36 @@ public class Main{
     }
 }
 //----------------------------------------------------------------------
+
+//------------------------------数组：记最小次数-------------------------
+import java.util.* ;
+
+public class Main{
+    public static void main(String[] args){
+        Main solution = new Main() ;
+    }
+
+    public Main(){
+        Scanner scanner = new Scanner(System.in) ;
+        while(scanner.hasNext()){
+            String s = scanner.nextLine() ;
+            String ans = "" ;
+            int[] arr = new int[26] ;
+            char[] chars = s.toCharArray() ;
+            int min = Integer.MAX_VALUE;
+            for(char c : chars){
+                arr[c - 'a']++ ;
+                min = Math.min(min , arr[c - 'a']) ;
+            }
+
+            for(char c : chars){
+                if(arr[c - 'a'] > min){
+                    System.out.print(c) ;
+                }
+            }
+            System.out.println() ;
+        }
+        scanner.close() ;
+    }
+}
+//----------------------------------------------------------------------
