@@ -24,6 +24,7 @@ public class Main{
             }
             System.out.println(ans) ;
         }
+        scanner.close();
     }
 
     public boolean helper(int n){
